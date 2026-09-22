@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <style>
+
+        body {
+            font-family: Arial;
+            margin: 30px;
+            background-color: #f2f2ff;
+        }
+
+        h1 {
+            color: #4b0082;
+        }
+
+        .pergunta {
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        select {
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 8px 15px;
+            font-size: 16px;
+        }
+
+        #resultado {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Quiz de Conhecimentos Gerais</h1>
+
+    <p id="jogador"></p>
+
+    <p class="pergunta">1. Qual é a capital do Brasil?</p>
+    <select id="pergunta1">
+        <option value="">Escolha uma resposta</option>
+        <option value="a">São Paulo</option>
+        <option value="b">Brasília</option>
+        <option value="c">Curitiba</option>
+    </select>
+
+    <br><br>
+
+    <p class="pergunta">2. Quantos dias tem uma semana?</p>
+    <select id="pergunta2">
+        <option value="">Escolha uma resposta</option>
+        <option value="a">5</option>
+        <option value="b">6</option>
+        <option value="c">7</option>
+    </select>
+
+    <br><br>
+
+    <p class="pergunta">3. Qual planeta é conhecido como planeta vermelho?</p>
+    <select id="pergunta3">
+        <option value="">Escolha uma resposta</option>
+        <option value="a">Marte</option>
+        <option value="b">Júpiter</option>
+        <option value="c">Saturno</option>
+    </select>
+
+    <br><br>
+
+    <p class="pergunta">4. Quanto é 10 x 5?</p>
+    <select id="pergunta4">
+        <option value="">Escolha uma resposta</option>
+        <option value="a">40</option>
+        <option value="b">50</option>
+        <option value="c">60</option>
+    </select>
+
+    <br><br>
+
+    <p class="pergunta">5. Qual é o maior oceano do mundo?</p>
+    <select id="pergunta5">
+        <option value="">Escolha uma resposta</option>
+        <option value="a">Atlântico</option>
+        <option value="b">Índico</option>
+        <option value="c">Pacífico</option>
+    </select>
+
+    <br><br>
+
+    <p class="pergunta">6. Quantos meses tem um ano?</p>
+    <select id="pergunta6">
+        <option value="">Escolha uma resposta</option>
+        <option value="a">10</option>
+        <option value="b">12</option>
+        <option value="c">14</option>
+    </select>
+
+    <br><br>
+
+    <p class="pergunta">7. Qual animal é conhecido como rei da selva?</p>
+    <select id="pergunta7">
+        <option value="">Escolha uma resposta</option>
+        <option value="a">Leão</option>
+        <option value="b">Tigre</option>
+        <option value="c">Elefante</option>
+    </select>
+
+    <br><br>
+
+    <p class="pergunta">8. Quanto é 100 ÷ 10?</p>
+    <select id="pergunta8">
+        <option value="">Escolha uma resposta</option>
+        <option value="a">5</option>
+        <option value="b">10</option>
+        <option value="c">20</option>
+    </select>
+
+    <br><br>
+
+    <p class="pergunta">9. Qual é o idioma oficial do Brasil?</p>
+    <select id="pergunta9">
+        <option value="">Escolha uma resposta</option>
+        <option value="a">Espanhol</option>
+        <option value="b">Inglês</option>
+        <option value="c">Português</option>
+    </select>
+
+    <br><br>
+
+    <p class="pergunta">10. Quantos lados tem um triângulo?</p>
+    <select id="pergunta10">
+        <option value="">Escolha uma resposta</option>
+        <option value="a">3</option>
+        <option value="b">4</option>
+        <option value="c">5</option>
+    </select>
+
+    <br><br>
+
+    <p class="pergunta">11. Qual é o maior planeta do Sistema Solar?</p>
+    <select id="pergunta11">
+        <option value="">Escolha uma resposta</option>
+        <option value="a">Terra</option>
+        <option value="b">Júpiter</option>
+        <option value="c">Marte</option>
+    </select>
+
+    <br><br>
+
+    <p class="pergunta">12. Quantos minutos tem uma hora?</p>
+    <select id="pergunta12">
+        <option value="">Escolha uma resposta</option>
+        <option value="a">30</option>
+        <option value="b">45</option>
+        <option value="c">60</option>
+    </select>
+
+    <br><br>
+
+    <p class="pergunta">13. Qual é o animal terrestre mais rápido?</p>
+    <select id="pergunta13">
+        <option value="">Escolha uma resposta</option>
+        <option value="a">Cavalo</option>
+        <option value="b">Guepardo</option>
+        <option value="c">Leão</option>
+    </select>
+
+    <br><br>
+
+    <p class="pergunta">14. Qual é o resultado de 9 + 6?</p>
+    <select id="pergunta14">
+        <option value="">Escolha uma resposta</option>
+        <option value="a">15</option>
+        <option value="b">16</option>
+        <option value="c">14</option>
+    </select>
+
+    <br><br>
+
+    <p class="pergunta">15. Qual é o continente onde fica o Brasil?</p>
+    <select id="pergunta15">
+        <option value="">Escolha uma resposta</option>
+        <option value="a">Europa</option>
+        <option value="b">África</option>
+        <option value="c">América do Sul</option>
+    </select>
+
+    <br><br>
+
+    <p class="pergunta">16. Qual é o símbolo químico da água?</p>
+    <select id="pergunta16">
+        <option value="">Escolha uma resposta</option>
+        <option value="a">CO2</option>
+        <option value="b">H2O</option>
+        <option value="c">O2</option>
+    </select>
+
+    <br><br>
+
+    <p class="pergunta">17. Quantos lados tem um quadrado?</p>
+    <select id="pergunta17">
+        <option value="">Escolha uma resposta</option>
+        <option value="a">3</option>
+        <option value="b">4</option>
+        <option value="c">5</option>
+    </select>
+
+    <br><br>
+
+    <p class="pergunta">18. Qual é o satélite natural da Terra?</p>
+    <select id="pergunta18">
+        <option value="">Escolha uma resposta</option>
+        <option value="a">Sol</option>
+        <option value="b">Marte</option>
+        <option value="c">Lua</option>
+    </select>
+
+    <br><br>
+
+    <p class="pergunta">19. Qual é o resultado de 8 x 8?</p>
+    <select id="pergunta19">
+        <option value="">Escolha uma resposta</option>
+        <option value="a">64</option>
+        <option value="b">56</option>
+        <option value="c">72</option>
+    </select>
+
+    <br><br>
+
+    <p class="pergunta">20. Quantas cores tem o arco-íris tradicionalmente?</p>
+    <select id="pergunta20">
+        <option value="">Escolha uma resposta</option>
+        <option value="a">5</option>
+        <option value="b">6</option>
+        <option value="c">7</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="verificar()">Finalizar Quiz</button>
+
+    <br><br>
+
+    <p id="resultado"></p>
+
+    <br>
+
+    <a id="ranking" href="ranking.html" style="display:none;">
+        Ver ranking geral
+    </a>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
